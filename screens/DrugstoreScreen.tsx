@@ -1,12 +1,30 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-console.log('<<<--- LOG');
+const Tab = createBottomTabNavigator();
+
+function HomeScreen() {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Home!!!!</Text>
+    </View>
+  );
+}
+
+function SettingsScreen() {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Settings!!!!</Text>
+    </View>
+  );
+}
+
 export const DrugstoreScreen = ({navigation}: any) => {
   return (
-    <View>
-      <Text>لیست دارو خانه ها</Text>
-      <Button title="بازگشت" onPress={() => navigation.pop()}></Button>
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
+    </Tab.Navigator>
   );
 };
