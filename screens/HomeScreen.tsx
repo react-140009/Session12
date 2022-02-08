@@ -11,7 +11,7 @@ export const HomeScreen = ({navigation}: any) => {
           <MenuItem
             img={require('../assets/images/pill8.png')}
             title="دارو"
-            onPress={() => navigation.push('Drugs')}></MenuItem>
+            onPress={() => navigation.push('DrugCategory')}></MenuItem>
           <MenuItem
             img={require('../assets/images/pharmacy.png')}
             title="داروخانه"

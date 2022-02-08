@@ -32,6 +32,7 @@ import {
   DrugstoreScreen,
   AboutUsScreen,
   HomeScreen,
+  DrugsScreen,
 } from './screens';
 
 import {NativeBaseProvider, Box} from 'native-base';
@@ -56,8 +57,13 @@ const App = () => {
             options={{title: 'درباره ما'}}
           />
           <Stack.Screen
-            name="Drugs"
+            name="DrugCategory"
             component={DrugCategoryScreen}
+            options={{title: 'دسته بندی دارو ها'}}
+          />
+          <Stack.Screen
+            name="Drugs"
+            component={DrugsScreen}
             options={{title: 'دسته بندی دارو ها'}}
           />
           <Stack.Screen
