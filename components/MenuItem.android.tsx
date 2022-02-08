@@ -6,6 +6,7 @@ import {
   TouchableHighlight,
   Image,
   StyleSheet,
+  Platform,
 } from 'react-native';
 
 export const MenuItem = ({navigation, img, title, onPress}: any) => {
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     paddingTop: 10,
     paddingBottom: 10,
-    borderRadius: 100
+    borderRadius: 100,
   },
   itemImage: {
     width: 80,

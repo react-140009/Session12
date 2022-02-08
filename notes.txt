@@ -7,6 +7,9 @@ SDK Manager
 RTL:
   https://stackoverflow.com/a/52381831/908464
 
+  android\app\src\main\AndroidManifest.xml
+    android:supportsRtl="true"
+
 
 Routing, Navigation
 
@@ -31,4 +34,21 @@ CSS Flex
 adb 
   adb devices
 
-  adb kill-server
+  # restart 
+  adb kill-server 
+
+
+  adb logcat *:S ReactNative:V ReactNativeJS:V
+
+Detect Platform
+  import {Platform} from 'react-native';
+  Platform.os === 'android'
+
+  ya
+
+  Comp.android.tsx
+  Comp.ios.tsx
+
+Component Package
+  https://nativebase.io/
+  https://reactnativeelements.com/

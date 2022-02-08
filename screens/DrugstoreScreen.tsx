@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 
+console.log('<<<--- LOG');
 export const DrugstoreScreen = ({navigation}: any) => {
   return (
     <View>
