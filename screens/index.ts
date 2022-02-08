@@ -8,3 +8,4 @@ export * from './HospitalScreen';
 export * from './LabScreen';
 export * from './PurchaseScreen';
 export * from './RegisterScreen';
+export * from './DrugDetailScreen';
