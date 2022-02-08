@@ -37,13 +37,17 @@ import {
 } from './screens';
 
 import {NativeBaseProvider, Box} from 'native-base';
-
+import SplashScreen from 'react-native-splash-screen';
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  React.useEffect(() => {
+    SplashScreen.hide();
+  });
 
   const Stack = createNativeStackNavigator();
 

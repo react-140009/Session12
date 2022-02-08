@@ -71,3 +71,14 @@ Rename app
 
   npx react-native-rename "دارو خانه سبز" -b ir.fad.rn.session10
   npx react-native-rename "GreenDrugStore" -b ir.fad.rn.session10
+
+
+
+Splash Screen
+  RN -> 
+  https://www.npmjs.com/package/react-native-splash-screen
+
+  https://blog.logrocket.com/building-a-splash-screen-in-react-native/
+
+Embeded DB
+  sqlite
