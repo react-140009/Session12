@@ -56,3 +56,12 @@ Component Package
     yarn add native-base react-native-svg react-native-safe-area-context
 
   https://reactnativeelements.com/
+
+
+ICON
+  https://github.com/oblador/react-native-vector-icons  
+  yarn add react-native-vector-icons
+
+
+APP icons
+https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html

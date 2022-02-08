@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,8 +24,30 @@ function SettingsScreen() {
 export const DrugstoreScreen = ({navigation}: any) => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({focused, color, size}) => {
+            return <Icon name="home" size={30} color={color} />;
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          tabBarIcon: ({focused, color, size}) => {
+            return (
+              <Icon
+                name={focused ? 'auto-fix-high' : 'auto-fix-normal'}
+                size={30}
+                color={color}
+              />
+            );
+          },
+        }}
+      />
     </Tab.Navigator>
   );
 };
