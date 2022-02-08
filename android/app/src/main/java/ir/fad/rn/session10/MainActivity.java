@@ -1,4 +1,4 @@
-package com.app09;
+package ir.fad.rn.session10;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "app09";
+    return "GreenDrugStore";
   }
 
   @Override

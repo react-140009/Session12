@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.app09">
+  package="ir.fad.rn.session10">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
