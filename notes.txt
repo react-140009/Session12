@@ -51,4 +51,8 @@ Detect Platform
 
 Component Package
   https://nativebase.io/
+    https://docs.nativebase.io/install-rn
+    
+    yarn add native-base react-native-svg react-native-safe-area-context
+
   https://reactnativeelements.com/
