@@ -101,5 +101,16 @@ GeoLocation
   yarn add @react-native-community/geolocation
 
  
+MAPs
+  https://github.com/react-native-maps/react-native-maps
+
+  yarn add react-native-maps -E
+
+  https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md
+
+
+
+
+
 Embeded DB
   sqlite
