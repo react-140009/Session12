@@ -96,6 +96,10 @@ AppState
 
 
 
+GeoLocation
+  https://github.com/react-native-geolocation/react-native-geolocation
+  yarn add @react-native-community/geolocation
 
+ 
 Embeded DB
   sqlite
