@@ -80,5 +80,21 @@ Splash Screen
 
   https://blog.logrocket.com/building-a-splash-screen-in-react-native/
 
+
+NetInfo
+  yarn add @react-native-community/netinfo
+  https://github.com/react-native-netinfo/react-native-netinfo
+
+
+AsyncStorage
+
+  https://github.com/react-native-async-storage/async-storage
+
+
+
+
+
+
+
 Embeded DB
   sqlite
