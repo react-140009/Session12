@@ -22,8 +22,14 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="daro" />
+        </intent-filter>
       </activity>
-      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyABmEI59-DK3a6NPqZiTP0HDCTHTcFh-e8"/>
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="A\"/>
       <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>

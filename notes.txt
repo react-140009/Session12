@@ -110,7 +110,15 @@ MAPs
 
 
 
+Payment
+  In-App Purchase
+    AppStore, Google Play, CafeBazar, Sibche
+      SDK
+  Server, 
+    Pardakhat
 
+
+Deep link
 
 Embeded DB
   sqlite
