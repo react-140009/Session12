@@ -7,7 +7,6 @@
  *
  * @format
  */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -38,8 +37,12 @@ import {
 
 import {NativeBaseProvider, Box} from 'native-base';
 import SplashScreen from 'react-native-splash-screen';
+import {useToast} from 'native-base';
+import NetInfo from '@react-native-community/netinfo';
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
+  const toast = useToast();
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -47,6 +50,21 @@ const App = () => {
 
   React.useEffect(() => {
     SplashScreen.hide();
+
+    const unsubscribe = NetInfo.addEventListener(state => {
+      console.log('Connection type', state.type);
+      console.log('Is connected?', state.isConnected);
+      if (!state.isConnected) {
+        toast.show({
+          description: 'اشکال در شبکه',
+        });
+      }
+    });
+    /**
+     *  async
+     *  pooling ❌
+     *  push ✔
+     */
   });
 
   const Stack = createNativeStackNavigator();
