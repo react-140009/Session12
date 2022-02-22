@@ -69,6 +69,10 @@ const App = () => {
         });
       }
     });
+
+    return () => {
+      subscription.remove();
+    };
     /**
      *  async
      *  pooling ❌
