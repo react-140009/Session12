@@ -16,6 +16,7 @@ import {
   Text,
   useColorScheme,
   View,
+  AppState,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -50,6 +51,14 @@ const App = () => {
 
   React.useEffect(() => {
     SplashScreen.hide();
+
+    const subscription = AppState.addEventListener('change', nextAppState => {
+      if (nextAppState === 'active') {
+        console.log('App has come to the foreground! 👏');
+      } else {
+        console.log('App has come to the background 😢');
+      }
+    });
 
     const unsubscribe = NetInfo.addEventListener(state => {
       console.log('Connection type', state.type);
