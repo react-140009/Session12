@@ -8,7 +8,7 @@ export const PurchaseScreen = ({navigation}: any) => {
       <Button
         title="خرید"
         onPress={() =>
-          Linking.openURL('https://192.168.1.2:44364/PaymentGateway/send/id/10')
+          Linking.openURL('https://192.168.174.140:44364/PaymentGateway/send')
         }></Button>
       <Button title="بازگشت" onPress={() => navigation.pop()}></Button>
     </View>
