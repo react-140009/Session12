@@ -127,3 +127,23 @@ Camera
 
 Embeded DB
   sqlite
+    https://github.com/andpor/react-native-sqlite-storage
+  realm js
+    https://docs.mongodb.com/realm/sdk/react-native/install/
+    yarn add realm
+
+Multi Dex
+
+
+tips:
+  Camera -> install -> vpn ❌ -> fail
+  dasti package.json
+  vpn!
+  cd android
+  .\gradlew clean
+
+
+
+Bestt practice
+  https://alexkondov.com/tao-of-react/
+  https://github.com/alan2207/bulletproof-react
