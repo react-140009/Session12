@@ -120,5 +120,10 @@ Payment
 
 Deep link
 
+
+Camera
+  https://github.com/mrousavy/react-native-vision-camera
+  yarn add react-native-vision-camera
+
 Embeded DB
   sqlite

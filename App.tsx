@@ -115,7 +115,7 @@ const App = () => {
           <Stack.Screen
             name="Help"
             component={HelpScreen}
-            options={{title: 'راهنما'}}
+            options={{title: 'دوربین'}}
           />
           <Stack.Screen
             name="Hospital"
