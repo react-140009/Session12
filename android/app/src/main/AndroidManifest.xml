@@ -29,7 +29,7 @@
             <data android:scheme="daro" />
         </intent-filter>
       </activity>
-      <meta-data android:name="com.google.android.geo.API_KEY" android:value="A\"/>
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBzoe-yvv5Q0Y2ohXrC7zzF_ZJgdBNeJ7o"/>
       <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>
